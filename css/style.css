@@ -31,11 +31,13 @@
 .pasword-output {
     padding: .5rem .5rem;
     background: transparent;
+    color: black;
 }
 
-.pasword {
+span {
     padding: .5rem .5rem;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    display: block;
     width: 100%;
     text-align: center;
     border: none;
@@ -61,6 +63,7 @@ button {
     color: white;
     border: none;
     border-radius: .5rem;
+    cursor: pointer;
 }
 
 label {
@@ -78,7 +81,7 @@ label {
 }
 
 .length-box {
-    width: 4rem;
+    width: 3rem;
     font-size: 1.2rem;
     padding-left: .2rem;
 }
