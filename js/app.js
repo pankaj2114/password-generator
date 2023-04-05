@@ -1,8 +1,12 @@
 
+
+
 const upperSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerSet = "abcdefghijklmnopqrstuvwxyz";
 const numberSet = "1234567890";
 const symbolSet = "!@#$%^&*90=+-";
+
+
 
 //selectors
 
@@ -13,10 +17,14 @@ const lowerCase = document.getElementById('lowercase');
 const number = document.getElementById('number');
 const symbol = document.getElementById('symbol');
 
+
+
 /// to generate the random value
 const getRandomData = (dataSet) => {
     return dataSet[Math.floor(Math.random() * dataSet.length)];
 }
+
+
 
 //to generate the password
 const generatePassword = (pasword = "") => {
@@ -38,6 +46,8 @@ const generatePassword = (pasword = "") => {
     passBox.innerText = truncateString(pasword, totalCharacter.value);
     // console.log(truncateString(pasword, totalCharacter.value));
 }
+
+
 // generatePassword();
 
 /// for the button action
@@ -47,6 +57,10 @@ document.getElementById('btn').addEventListener(
         generatePassword();
     }
 )
+
+
+
+
 
 // to generate the string according total character checked
 function truncateString(str, num) {
